@@ -11,8 +11,7 @@
         scroll-top="{{scrollTopVal}}"
         bindtap="resetInputStatus">
     <block wx:for="{{chatItems}}" wx:key="{{index}}">
-        <template is="chat-item"
-                  data="{{length:chatItems.length,index:index,item:item}}"/>
+        <template is="chat-item" data="{{length:chatItems.length,index:index,item:item}}"/>
     </block>
 
 </scroll-view>
